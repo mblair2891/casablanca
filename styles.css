@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
 :root {
-  --espresso: #2b221b;
-  --copper: #c97a3d;
-  --cream: #f7f1e9;
-  --text: #1f1a17;
-  --muted: #7a716b;
+  --espresso: #0b0b0b;
+  --copper: #145c35;
+  --cream: #f4f6f1;
+  --text: #0f1a12;
+  --muted: #425549;
   --max-width: 1100px;
   --radius: 12px;
   --shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: var(--copper);
+  color: #1c7f4e;
 }
 
 img {
@@ -49,7 +49,7 @@ img {
 }
 
 .site-header {
-  background: var(--espresso);
+  background: linear-gradient(90deg, var(--espresso), #0f2819);
   color: #fff;
   position: sticky;
   top: 0;
@@ -114,18 +114,22 @@ img {
   border-radius: 999px;
   border: 2px solid var(--copper);
   font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  letter-spacing: 0.01em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   display: inline-block;
 }
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  background: #1c7f4e;
+  border-color: #1c7f4e;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
 .btn.outline {
   background: transparent;
   color: #fff;
+  border-color: rgba(255,255,255,0.75);
 }
 
 .btn.ghost {
@@ -133,6 +137,7 @@ img {
   color: #fff;
   border-color: rgba(255,255,255,0.6);
 }
+
 
 .btn.light {
   background: #fff;
@@ -150,7 +155,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.8rem;
-  color: var(--copper);
+  color: #1c7f4e;
   font-weight: 700;
   margin: 0 0 0.5rem;
 }
@@ -172,12 +177,13 @@ h1, h2, h3, h4 {
   padding: 6rem 0;
   background-size: cover;
   background-position: center;
+  border-bottom: 8px solid #0f2819;
 }
 
 .hero .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+  background: linear-gradient(180deg, rgba(11,11,11,0.7), rgba(20,92,53,0.55));
 }
 
 .hero-content {
@@ -199,7 +205,7 @@ section {
 }
 
 .section-bg {
-  background: #fff;
+  background: #ffffff;
 }
 
 .section-header {
@@ -222,10 +228,11 @@ section {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
+  border: 1px solid rgba(20,92,53,0.08);
 }
 
 .card.quote {
-  background: #f0e7dc;
+  background: #e6f0e9;
 }
 
 .quote-attrib {
@@ -235,7 +242,7 @@ section {
 
 .text-link {
   color: var(--copper);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .split-grid {
@@ -259,7 +266,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  background: linear-gradient(180deg, rgba(11,11,11,0.4), rgba(20,92,53,0.55));
 }
 
 .image-card-content {
@@ -290,7 +297,7 @@ section {
 }
 
 .section-bg .card {
-  background: #fdfaf6;
+  background: #f7fbf8;
 }
 
 .page-hero {
@@ -316,6 +323,7 @@ section {
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
   font-size: 0.75rem;
+  letter-spacing: 0.02em;
 }
 
 .note {
@@ -332,6 +340,7 @@ section {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1.5rem;
+  border: 1px solid rgba(20,92,53,0.12);
 }
 
 .location-header {
@@ -359,7 +368,7 @@ section {
 }
 
 .hours tr.active {
-  background: #f6ede4;
+  background: #e6f0e9;
   font-weight: 700;
 }
 
@@ -372,7 +381,7 @@ section {
 }
 
 .status-open {
-  background: #2f8f4e;
+  background: #1f7a3c;
 }
 
 .status-closed {
@@ -451,7 +460,7 @@ textarea {
 }
 
 .cta-strip {
-  background: var(--espresso);
+  background: linear-gradient(120deg, #0b0b0b, #0f2819, #145c35);
   color: #fff;
   padding: 2.5rem 0;
 }
@@ -470,7 +479,7 @@ textarea {
 }
 
 .site-footer {
-  background: var(--espresso);
+  background: linear-gradient(120deg, #0b0b0b, #0f2819);
   color: #fff;
   padding: 3rem 0;
 }
